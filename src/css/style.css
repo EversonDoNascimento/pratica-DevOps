@@ -1,0 +1,185 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.flex-layout {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: black;
+  color: white;
+  height: 4rem;
+}
+
+a:hover {
+  font-weight: bold;
+}
+
+.logo-image {
+  width: 4rem;
+  position: relative;
+  top: 1rem;
+  margin-left: 0.5rem;
+}
+
+.logo-image img {
+  width: 6rem;
+}
+
+.flex-layout section ul {
+  margin-right: 1rem;
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+.colorHtml {
+  color: red;
+}
+
+.colorCss {
+  color: blue;
+}
+
+.colorJavascript {
+  color: orange;
+}
+
+.article1 {
+  background: url("./../..//images/laptop.png");
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.article1 h1 {
+  margin-bottom: 1rem;
+  font-size: 1.6rem;
+}
+
+.article1 p {
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.3rem;
+}
+
+.conteudo {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 8rem;
+  color: white;
+  background-color: #ea0000;
+  width: 100vw;
+  height: 100vh;
+}
+
+.conteudo h1 {
+  text-align: left;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+.conteudo img {
+  width: 25rem;
+}
+
+.conteudo p {
+  margin-right: 5rem;
+  text-align: justify;
+}
+
+.rodape {
+  font-size: 0.8rem;
+  text-align: center;
+  color: white;
+  max-width: 100vw;
+  max-height: 2rem;
+  background-color: black;
+}
+
+#btn-mobile {
+  display: none;
+}
+
+.active button {
+  background-color: pink;
+}
+
+@media (max-width: 480px) {
+  html {
+    font-size: 30%;
+    text-align: center;
+  }
+  .article2 img {
+    margin: 4rem 0px;
+    width: 20rem;
+  }
+}
+@media (max-width: 769px) {
+  html {
+    font-size: 90%;
+  }
+  .conteudo {
+    flex-direction: column;
+    gap: 0rem;
+  }
+  .conteudo h1 {
+    text-align: center;
+  }
+  .conteudo p {
+    margin: 0px 5rem;
+  }
+  #btn-mobile {
+    display: block;
+    margin-right: 2rem;
+  }
+  #menu {
+    display: none;
+  }
+  #menu a {
+    display: block;
+    padding: 1rem;
+  }
+  #menu a:hover {
+    color: black;
+    font-weight: bold;
+    background-color: white;
+  }
+  nav.active #menu {
+    display: block;
+    position: absolute;
+    width: 180px;
+    background-color: black;
+    right: -1rem;
+    top: 3.96rem;
+    text-align: center;
+  }
+}
+@media (min-width: 1025px) {
+  html {
+    font-size: 100%;
+  }
+  .conteudo {
+    flex-direction: row;
+  }
+}
+@media (min-width: 1201px) {
+  html {
+    font-size: 125%;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
